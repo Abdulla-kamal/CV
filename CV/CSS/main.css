@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+div {
+width: 100%;
+height: 100vh;
+display: grid;
+grid-template-columns: repeat(10 , 1fr);
+grid-template-rows:20% 65% 10% auto;
+grid-template-areas: "logo logo nav nav nav nav nav nav nav nav" 
+"cont cont cont cont cont cont cont cont cont cont"
+"h h h h h h h h h h"
+"copy copy copy copy copy copy copy copy copy copy";
+background: linear-gradient(to bottom , #837fff , #00a1ff);
+}
+
+img {
+    grid-area: logo;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin: 20px;
+    box-shadow: 0px 0px 43px -4px #1a2322, inset 0px 0px 0px 0px #a05e64, 5px -5px 5px 0px #7e78c1;
+    position: relative;
+}
+
+
+
+h2 {
+    grid-area: nav;
+    justify-self: center;
+    line-height: 150px;
+    font-size: xxx-large;
+    font-weight: 900;
+    color: midnightblue;
+    position: relative;
+}
+
+
+
+
+
+.content {
+    grid-area: cont;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+
+
+h4 {
+    font-size: xx-large;
+    font-weight: 600;
+    position: relative;
+    width: 600px;
+    text-align: start;
+}
+
+
+h4::before {
+    content: '';
+    position: absolute;
+    height: 40%;
+    left: -25px;
+    width: 5px;
+    background: linear-gradient(to bottom , #37233d, #001dff);
+}
+
+footer {
+    grid-area: copy;
+  background-color: #1a2322;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+p {
+    grid-area: date;
+}
+
+span {
+    font-weight: 800;
+    color: midnightblue;
+}
+
+.facebook {
+    background-color: #1197F6;
+    text-decoration: none;
+    color: white;
+    width: 300px;
+    height: 70px;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.instagram {
+    background-color:  #CE0880;
+    text-decoration: none;
+    color: white;
+    width: 300px;
+    height: 70px;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.whatsapp {
+    background-color:  #47C753;
+    text-decoration: none;
+    color: white;
+    width: 300px;
+    height: 70px;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+h1 {
+    background-color: #1a2322;
+    grid-area: h;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #191970;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1A2322;
+  }
+
+  ::selection {
+    background-color: #191970;
+    color: black;
+  }
