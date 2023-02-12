@@ -12,7 +12,7 @@ width: 100%;
 height: 100vh;
 display: grid;
 grid-template-columns: repeat(10 , 1fr);
-grid-template-rows:20% 65% 10% auto;
+grid-template-rows:20% 60% 5% auto;
 grid-template-areas: "logo logo nav nav nav nav nav nav nav nav" 
 "cont cont cont cont cont cont cont cont cont cont"
 "h h h h h h h h h h"
@@ -81,7 +81,7 @@ footer {
   background-color: #1a2322;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 
 p {
@@ -104,10 +104,12 @@ span {
     align-items: center;
     justify-content: center;
     margin: 10px;
+    font-size: xx-large;
+    font-weight: 700;
 }
 
 .instagram {
-    background-color:  #CE0880;
+    background: linear-gradient(to bottom, #CE0880, #FDB107) ;
     text-decoration: none;
     color: white;
     width: 300px;
@@ -117,6 +119,8 @@ span {
     align-items: center;
     justify-content: center;
     margin: 10px;
+    font-size: xx-large;
+    font-weight: 700;
 }
 
 .whatsapp {
@@ -130,6 +134,14 @@ span {
     align-items: center;
     justify-content: center;
     margin: 10px;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.facebook:hover , .instagram:hover , .whatsapp:hover {
+    width: 305px;
+    height: 75px;
+    transition-duration: 0.3s ;
 }
 
 h1 {
